@@ -22,3 +22,9 @@ The host will:
 2. Compile the Jolt guest.
 3. Prove the policy compliance execution.
 4. Verify the proof.
+
+## Examples
+
+The `examples/` directory mirrors the original ZKGuard example inputs and includes a
+Jolt-based prover runner. See `examples/README.md` for the full command and optional
+trace generation steps.
