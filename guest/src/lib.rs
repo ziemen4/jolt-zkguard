@@ -50,7 +50,7 @@ fn verify_merkle_proof(root: &[u8], leaf_bytes: &[u8], proof: &MerklePath) -> bo
     computed_hash.as_slice() == root
 }
 
-#[jolt::provable(memory_size = 1048576, stack_size = 65536, max_trace_length = 1048576)]
+#[jolt::provable(memory_size = 1048576, stack_size = 65536, max_trace_length = 8388608)]
 fn zkguard_policy(
     policy_merkle_root: [u8; 32],
     user_action: jolt::UntrustedAdvice<UserAction>,
